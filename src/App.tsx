@@ -1,19 +1,13 @@
-import React from 'react';
-import TaskCard from './assets/taskcard';
+// App.tsx
+import React from "react";
+import Board from "./components/Board";
 
-
-
-function App() {
-
-  const title='Do Market Research'
-  const id="BUS-1"
-  const points=5
-
+const App: React.FC = () => {
   return (
-    <div>
-      <TaskCard title={title} id={id} points={points}/>
+    <div className="App">
+      <Board />
     </div>
-  )
-}
+  );
+};
 
 export default App;
